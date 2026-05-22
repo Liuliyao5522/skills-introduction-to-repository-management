@@ -1,0 +1,8 @@
+mkdir -p .github && cat > .github/dependabot.yml << 'EOF'
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+EOF
